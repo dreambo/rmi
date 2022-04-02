@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libfront.PanierController">
+   <children>
+      <Pane prefHeight="56.0" prefWidth="350.0">
+         <children>
+            <Text layoutX="-2.0" layoutY="36.0" lineSpacing="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panier" textAlignment="CENTER" wrappingWidth="354.13671875">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Group>
+         <children>
+            <VBox prefHeight="340.0" prefWidth="346.0">
+               <children>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" prefHeight="271.0" prefWidth="346.0" text="Panier">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <ListView fx:id="lvArticles" layoutX="-1.0" layoutY="2.0" prefHeight="237.0" prefWidth="346.0" />
+                                    <ScrollBar layoutX="330.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="238.0" prefWidth="20.0" AnchorPane.rightAnchor="-6.0" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" prefHeight="219.0" prefWidth="346.0" text="Montant : ">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Text layoutX="55.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour un montant de :" wrappingWidth="167.03607536764707">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </Text>
+                                    <Label fx:id="mtPanier" layoutX="139.0" layoutY="80.0">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+         </children>
+      </Group>
+      <ToolBar prefHeight="23.0" prefWidth="350.0">
+        <items>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#SwitchToVitrine" prefHeight="44.0" prefWidth="150.0" text="&lt; Boutique" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="170.0" layoutY="170.0" lineSpacing="10.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#SwitchToCommande" prefHeight="44.0" prefWidth="150.0" text="Valider &gt;" textAlignment="CENTER" translateX="30.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+   </children>
+</VBox>

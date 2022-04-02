@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libfront.VitrineController">
+   <children>
+      <Text layoutX="63.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vitrine">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <SplitPane dividerPositions="0.6224489795918368" layoutX="163.0" layoutY="24.0" prefHeight="127.0" prefWidth="392.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="125.0" prefWidth="157.0">
+               <children>
+                  <Button fx:id="btnAjouter" layoutX="48.0" layoutY="80.0" mnemonicParsing="false" onAction="#ajoutPanier" text="Ajouter">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="48.0" layoutY="17.0" text="Ajout au panier par ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="inputArticleID" layoutX="46.0" layoutY="45.0" prefHeight="31.0" prefWidth="147.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="btnSupprimer" layoutX="122.0" layoutY="80.0" mnemonicParsing="false" onAction="#supprimePanier" text="Enlever">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="125.0" prefWidth="63.0">
+               <children>
+                  <Text layoutX="49.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panier" />
+                  <ListView fx:id="lvPanier" layoutY="20.0" prefHeight="107.0" prefWidth="144.0" />
+                  <ScrollBar layoutX="130.0" layoutY="24.0" orientation="VERTICAL" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+      <ScrollPane layoutX="63.0" layoutY="172.0" prefHeight="355.0" prefWidth="496.0">
+         <content>
+            <VBox prefHeight="366.0" prefWidth="496.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nos livres en stock" textAlignment="CENTER" wrappingWidth="492.13671875">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <ListView fx:id="lvLivres" prefHeight="319.0" prefWidth="496.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Button layoutX="272.0" layoutY="547.0" mnemonicParsing="false" onAction="#SwitchToPanier" text="Panier">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Group />
+      <Group layoutX="191.0" layoutY="556.0" />
+      <TextField fx:id="inputname" layoutX="14.0" layoutY="109.0" prefHeight="25.0" prefWidth="135.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="lvBoutique" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libfront.HelloController">
+   <children>
+      <TitledPane animated="false" layoutX="390.0" layoutY="8.0" text="Clients">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="330.0" prefWidth="200.0">
+               <children>
+                  <ListView fx:id="lvClients" prefHeight="332.0" prefWidth="200.0" />
+               </children>
+            </AnchorPane>
+        </content>
+         <effect>
+            <Blend />
+         </effect>
+      </TitledPane>
+      <ToolBar layoutX="45.0" layoutY="125.0" prefHeight="42.0" prefWidth="276.0">
+         <items>
+            <Label layoutX="47.0" layoutY="136.0" prefHeight="32.0" prefWidth="78.0" text="Identifiant" />
+            <TextField fx:id="inputname" layoutX="150.0" layoutY="136.0" prefHeight="32.0" prefWidth="164.0" />
+         </items>
+      </ToolBar>
+      <ToolBar layoutX="43.0" layoutY="200.0" prefHeight="42.0" prefWidth="276.0">
+         <items>
+            <Label layoutX="47.0" layoutY="184.0" prefHeight="32.0" prefWidth="78.0" text="Password" />
+            <TextField fx:id="inputpass" layoutX="150.0" layoutY="184.0" prefHeight="32.0" prefWidth="164.0" />
+         </items>
+      </ToolBar>
+      <Text layoutX="36.0" layoutY="73.0" strokeLineCap="ROUND" strokeType="OUTSIDE" strokeWidth="0.0" text="LibraiWeb connexion" textAlignment="CENTER" wrappingWidth="293.13671875">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ToolBar layoutX="43.0" layoutY="312.0" prefHeight="52.0" prefWidth="276.0">
+        <items>
+          <Button fx:id="btnConnect" mnemonicParsing="false" onAction="#controlClient" prefHeight="39.0" prefWidth="126.0" text="Connect">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#SwitchToUsers" prefHeight="42.0" prefWidth="134.0" text="new Article">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+        </items>
+      </ToolBar>
+      <Label fx:id="retourNull" layoutX="144.0" layoutY="93.0" prefHeight="17.0" prefWidth="78.0" />
+   </children>
+</Pane>

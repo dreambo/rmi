@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libfront.ArticleController">
+   <children>
+      <Text layoutX="105.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout d'un livre en librairie" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tfTitre" layoutX="43.0" layoutY="86.0" prefHeight="25.0" prefWidth="320.0" promptText="Titre" />
+      <TextField fx:id="tfPrix" layoutX="43.0" layoutY="135.0" promptText="Prix" />
+      <TextField fx:id="tfQuantite" layoutX="214.0" layoutY="135.0" promptText="Quantité" />
+      <TextArea fx:id="tfDescription" layoutX="43.0" layoutY="183.0" prefHeight="155.0" prefWidth="320.0" promptText="Description" />
+      <Button layoutX="167.0" layoutY="353.0" mnemonicParsing="false" onAction="#addArticle" text="Ajouter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="17.0" layoutY="16.0" mnemonicParsing="false" onAction="#SwitchToStart" text="Retour" />
+      <Label fx:id="labErreur" layoutX="261.0" layoutY="352.0" prefHeight="30.0" prefWidth="94.0" textFill="#f20808" />
+   </children>
+</AnchorPane>

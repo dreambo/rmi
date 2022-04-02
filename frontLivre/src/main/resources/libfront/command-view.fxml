@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Détail de la commande après paiement -->
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libfront.CommandController">
+   <children>
+      <Button layoutX="284.0" layoutY="423.0" mnemonicParsing="false" onAction="#SwitchToStart" text="Connexion">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Text layoutX="77.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Votre commande du ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="nowdate" layoutX="242.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="77.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A bien été enregistré, pour un montant de ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="mtAchat" layoutX="398.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mt" wrappingWidth="41.203125">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ListView fx:id="lvArticles" layoutX="77.0" layoutY="150.0" prefHeight="200.0" prefWidth="343.0" />
+      <ScrollBar layoutX="405.0" layoutY="152.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="14.0" />
+   </children>
+</AnchorPane>
